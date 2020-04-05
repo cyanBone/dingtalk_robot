@@ -34,7 +34,7 @@ func main() {
 
 	//普通文本信息
 	textMessage := message.NewTextMessage()
-	textMessage.Content="我就是我, 是不一样的烟火111"
+	textMessage.Content="我就是我, 是不一样的烟火"
     
 	//@对应的人
 	textMessage.AtMobiles([]string{"1111111111"})
@@ -112,6 +112,24 @@ cardMessage.Btns = []message.Btn{
         Title:     "不感兴趣",
         ActionURL: "https://www.dingtalk.com/",
     },
+}
+```
+
+### FeedCard类型
+
+```
+cardMessage := message.NewFeedCardMessage()
+cardMessage.Links=[]message.Links{
+	{
+		Title:      "时代的火车向前开",
+		MessageURL: "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI",
+		PicURL:     "https://video.0-w.cc/assets/images/category/govcl.jpg",
+	},
+	{
+		Title:      "时代的火车向前开2",
+		MessageURL: "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI",
+		PicURL:     "https://video.0-w.cc/assets/images/category/govcl.jpg",
+	},
 }
 ```
 
